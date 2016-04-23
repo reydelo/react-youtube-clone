@@ -4,6 +4,7 @@ import YTSearch from 'youtube-api-search';
 import _ from 'lodash';
 
 import SearchBar from './components/SearchBar';
+import VideoList from './components/VideoList';
 
 import { apiKey } from '../config.js';
 
@@ -32,7 +33,15 @@ class App extends Component {
     const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
     return (
       <div>
-        <SearchBar onSearchTermChange={videoSearch}/>
+        <div>
+          <SearchBar onSearchTermChange={videoSearch} />
+        </div>
+        <div>
+          <div className="col-md-8">
+            <h5>Video Player goes here</h5>
+          </div>
+          <VideoList videos={this.state.videos} />
+        </div>
       </div>
     )
   }
