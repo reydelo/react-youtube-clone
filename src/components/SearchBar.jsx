@@ -13,13 +13,13 @@ class SearchBar extends Component {
   render() {
     return (
       <div className="search-bar">
-        <h5>Search YouTube</h5>
         <input
-          value={ this.state.term }
+          placeholder="Search You Tube"
           onChange={ event => this.onInputChange(event.target.value) }
         />
       </div>
-    )
+    );
+    // value={ this.state.term }
   }
 }
 

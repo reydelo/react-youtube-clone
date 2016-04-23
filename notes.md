@@ -10,4 +10,7 @@ remove index.js file, reducers directory, actions directory
 let for any variable that can change
 const for any read-only variable
 
+jsx - html inside of javascript file
 curly brakets in jsx lets you console.log and such!
+
+wtf is super?
