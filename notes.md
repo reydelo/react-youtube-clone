@@ -14,3 +14,5 @@ jsx - html inside of javascript file
 curly brakets in jsx lets you console.log and such!
 
 wtf is super?
+
+allow time to process, think of the answer, before giving it and moving forward
